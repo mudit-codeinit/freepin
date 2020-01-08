@@ -1,0 +1,195 @@
+[23-Dec-2019 18:35:32 UTC] PHP Notice:  Undefined index: shipping_info in /home/yzt6x8ghkp41/public_html/core/controller.php on line 53
+[23-Dec-2019 18:35:55 UTC] PHP Notice:  Undefined index: shipping_info in /home/yzt6x8ghkp41/public_html/core/controller.php on line 213
+[23-Dec-2019 18:36:27 UTC] PHP Notice:  Undefined index: shipping_info in /home/yzt6x8ghkp41/public_html/core/controller.php on line 223
+[23-Dec-2019 18:36:37 UTC] PHP Notice:  Undefined index: shipping_info in /home/yzt6x8ghkp41/public_html/core/controller.php on line 234
+[30-Dec-2019 10:58:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:00:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:02:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:04:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:06:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:08:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:10:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:12:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:14:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:16:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:18:01 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:50:28 UTC] PHP Notice:  Undefined index: total in /home/yzt6x8ghkp41/public_html/core/helper.php on line 320
+[30-Dec-2019 11:50:28 UTC] PHP Notice:  Undefined index: sno in /home/yzt6x8ghkp41/public_html/core/helper.php on line 323
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: total in /home/yzt6x8ghkp41/public_html/core/controller.php on line 383
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: email in /home/yzt6x8ghkp41/public_html/core/helper.php on line 587
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: fulfillment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 588
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: shipping_address in /home/yzt6x8ghkp41/public_html/core/helper.php on line 590
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: billing_address in /home/yzt6x8ghkp41/public_html/core/helper.php on line 591
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: order_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 594
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/core/helper.php on line 595
+[30-Dec-2019 11:55:23 UTC] PHP Notice:  Undefined index: payment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 596
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: shipping_address in /home/yzt6x8ghkp41/public_html/core/controller.php on line 244
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: billing_address in /home/yzt6x8ghkp41/public_html/core/controller.php on line 245
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: email in /home/yzt6x8ghkp41/public_html/core/helper.php on line 587
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: fulfillment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 588
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/core/helper.php on line 595
+[30-Dec-2019 12:36:05 UTC] PHP Notice:  Undefined index: payment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 596
+[30-Dec-2019 13:29:41 UTC] PHP Notice:  Undefined variable: order_step in /home/yzt6x8ghkp41/public_html/core/controller.php on line 392
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: total in /home/yzt6x8ghkp41/public_html/core/controller.php on line 386
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: email in /home/yzt6x8ghkp41/public_html/core/helper.php on line 587
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: fulfillment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 588
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: shipping_address in /home/yzt6x8ghkp41/public_html/core/helper.php on line 590
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: billing_address in /home/yzt6x8ghkp41/public_html/core/helper.php on line 591
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/core/helper.php on line 595
+[30-Dec-2019 15:50:16 UTC] PHP Notice:  Undefined index: payment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 596
+[03-Jan-2020 13:35:07 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_XyCGX5WR2I9ztf) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[05-Jan-2020 02:50:23 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_Sb8WBJrG2ZLeL6) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[05-Jan-2020 04:37:38 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_sSyXMNxwu1Srkj) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[05-Jan-2020 04:39:57 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_N7K11A4drk53TO) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[05-Jan-2020 13:12:04 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_ohcybq4qrrXjVE) Keys for idempotent requests can only be used with the same parameters they were first used with. Try using a key other than '31' if you meant to execute a different request.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[06-Jan-2020 17:15:35 UTC] PHP Notice:  Undefined index: cart in /home/yzt6x8ghkp41/public_html/core/controller.php on line 68
+[06-Jan-2020 17:15:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/core/controller.php on line 73
+[06-Jan-2020 17:15:36 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_KmXxaoIaBHYo1J) Invalid positive integer
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[06-Jan-2020 18:43:04 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_Xm4whU0BQajBwR) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 00:56:15 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_ZesX2A1uZPJ4Vr) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 00:58:03 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_hDHMvJKDcdCWlg) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 02:58:26 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_9RWXCvJYHpYAPQ) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 03:01:51 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_gSj9r32mTFXyMo) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 15:22:30 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_B8b3U0LbemJ1xW) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 15:38:22 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_v85KDVh36OAqnd) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 16:42:44 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_PBRUq3oxKEEVcK) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 17:43:17 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_TPTcyS65zpLCfX) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 17:45:42 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_mGz1kEttLy3Da8) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 17:48:57 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_YSjh1vaLkp3wdJ) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 18:14:56 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_ixi4ST7Kh98ELx) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 21:15:53 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_iPCoJ4MImNPGVX) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 21:19:14 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_JOXgzm03duY1uV) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 21:55:42 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_UGalGCPiTzFGqv) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 22:12:57 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_1yt77tIkdcTZuj) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 23:14:38 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_sdtqLVtpUYnca1) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 23:16:31 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_yeMmCkkVQHqu9M) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[07-Jan-2020 23:39:19 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_8BX5pbLDUDjumt) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 00:07:59 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_5Y7jMlxIoYEZ3z) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 00:09:05 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_2jDTl3F9451XPl) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 00:59:48 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_5Clx554OA2wan9) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:03:43 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_kuxJVGdkWS1wLc) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:07:33 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_res7iZWswNtY7f) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:10:15 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_jMq9SzLieZAmMq) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:24:35 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_09ABhrdWPLdHcK) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:28:21 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_FN45DVdn2THciI) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:30:22 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_NlIOiHJTzuZAfa) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:32:59 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_YMph9sprqp2FGa) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:38:49 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_MLWy2TcwXAOtFH) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 01:58:01 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_lRIH8fZS3TCdSl) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:00:54 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_B6RqczwBNFy5Ws) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:27:45 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_a3WxUJo21y6vRb) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:31:30 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_As1gOUP1SYUhbf) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:35:02 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_qyKvsswFndU9o2) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:38:19 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_W4c53pn0xFEb4l) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:39:44 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_N2WidacTm5jXKh) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:43:17 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_xiayVEd80E1215) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:47:39 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_pFCA7wrLwPCGPf) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:52:46 UTC] PHP Notice:  Undefined index: cart in /home/yzt6x8ghkp41/public_html/core/controller.php on line 68
+[08-Jan-2020 02:52:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/core/controller.php on line 73
+[08-Jan-2020 02:52:47 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_1wnCjd42B68K5G) Invalid positive integer
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:52:51 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_mp0dJYIqFVtFBV) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:55:20 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_l6AbWgHmb4pwDX) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 02:59:55 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_2dhh8ZctfVeJjl) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:06:21 UTC] PHP Notice:  Undefined index: cart in /home/yzt6x8ghkp41/public_html/core/controller.php on line 68
+[08-Jan-2020 03:06:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/core/controller.php on line 73
+[08-Jan-2020 03:11:00 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_rK6CXtaN0xDXc5) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:14:17 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_Z9XDx2mAQ7Ztpe) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:28:01 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_4cseyKnhUWDfkZ) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:29:54 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_LVrljR4tQ89FDP) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:37:24 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_ISro5K3cm3eWBl) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:38:34 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_2z2qqMYkaiyrkK) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:42:13 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_hphfsREAIK8D7f) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:45:47 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_ZthNPeodYYBzmt) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:46:09 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_7lDbBEt3zIsRqD) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:52:34 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_sNmRcZQKEyXZe6) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: shipping_address in /home/yzt6x8ghkp41/public_html/core/controller.php on line 292
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: billing_address in /home/yzt6x8ghkp41/public_html/core/controller.php on line 293
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: email in /home/yzt6x8ghkp41/public_html/core/helper.php on line 625
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: fulfillment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 626
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/core/helper.php on line 633
+[08-Jan-2020 03:53:39 UTC] PHP Notice:  Undefined index: payment_status in /home/yzt6x8ghkp41/public_html/core/helper.php on line 634
+[08-Jan-2020 03:57:49 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_HiFYhg0n8I5UwJ) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 04:00:21 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_Udm9k5px9nRUOf) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 04:05:35 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_fsgZAu4KfrBMjf) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 04:16:44 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_DI4h8ca1MfuhLn) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 04:49:03 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_XS9fTV4HnkT9q7) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 05:13:51 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_YBa6iY2h59Cb9z) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 05:20:10 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_o5wK71ChMPfP1g) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 05:27:01 UTC] PHP Notice:  Undefined index: cart in /home/yzt6x8ghkp41/public_html/core/controller.php on line 68
+[08-Jan-2020 05:27:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/core/controller.php on line 73
+[08-Jan-2020 05:28:59 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_DftI2GBlD9gxYf) Keys for idempotent requests can only be used with the same parameters they were first used with. Try using a key other than '148' if you meant to execute a different request.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 05:39:24 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_qypVtqgKeFFIH5) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 06:24:50 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_dg560fPqHKMvsQ) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 06:33:16 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_xOSUeapd4FOHPg) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38
+[08-Jan-2020 06:53:02 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_VisVZaZm4nM5Ai) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/yzt6x8ghkp41/public_html/stripe_charge/lib/Exception/ApiErrorException.php on line 38

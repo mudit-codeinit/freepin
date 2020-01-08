@@ -1,0 +1,29 @@
+[30-Dec-2019 10:57:41 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yzt6x8ghkp41/public_html/core/config.php on line 16
+[30-Dec-2019 11:19:38 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell.php on line 15
+[30-Dec-2019 11:19:38 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell.php on line 198
+[30-Dec-2019 15:43:38 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 5
+[30-Dec-2019 15:43:39 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 182
+[31-Dec-2019 17:18:37 UTC] PHP Notice:  Undefined index: bill_info in /home/yzt6x8ghkp41/public_html/views/checkout.php on line 15
+[31-Dec-2019 17:18:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/views/checkout.php on line 247
+[31-Dec-2019 17:41:33 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 129
+[31-Dec-2019 17:41:33 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 147
+[31-Dec-2019 17:41:33 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 178
+[31-Dec-2019 17:42:01 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 129
+[31-Dec-2019 17:42:01 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 147
+[31-Dec-2019 17:42:01 UTC] PHP Notice:  Undefined variable: products in /home/yzt6x8ghkp41/public_html/views/home.php on line 178
+[01-Jan-2020 08:30:00 UTC] PHP Notice:  Undefined index: bill_info in /home/yzt6x8ghkp41/public_html/views/checkout.php on line 15
+[01-Jan-2020 08:30:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/yzt6x8ghkp41/public_html/views/checkout.php on line 247
+[06-Jan-2020 01:00:44 UTC] PHP Fatal error:  Uncaught PHPShopify\Exception\CurlException: Request failed with HTTP Code 503. in /home/yzt6x8ghkp41/public_html/vendor/phpclassic/php-shopify/lib/ShopifyResource.php:489
+Stack trace:
+#0 /home/yzt6x8ghkp41/public_html/vendor/phpclassic/php-shopify/lib/ShopifyResource.php(315): PHPShopify\ShopifyResource->processResponse(NULL, 'products')
+#1 /home/yzt6x8ghkp41/public_html/core/helper.php(16): PHPShopify\ShopifyResource->get(Array)
+#2 /home/yzt6x8ghkp41/public_html/views/home.php(2): getProducts('Main')
+#3 /home/yzt6x8ghkp41/public_html/index.php(13): include('/home/yzt6x8ghk...')
+#4 {main}
+  thrown in /home/yzt6x8ghkp41/public_html/vendor/phpclassic/php-shopify/lib/ShopifyResource.php on line 489
+[07-Jan-2020 21:48:20 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 5
+[07-Jan-2020 21:48:20 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 182
+[07-Jan-2020 23:53:14 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 5
+[07-Jan-2020 23:53:14 UTC] PHP Notice:  Undefined index: payment_type in /home/yzt6x8ghkp41/public_html/views/upsell3.php on line 182
+[08-Jan-2020 05:26:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/yzt6x8ghkp41/public_html/core/config.php on line 21
+[08-Jan-2020 05:26:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/yzt6x8ghkp41/public_html/core/config.php on line 21

@@ -1,0 +1,478 @@
+<?php
+	$products = getProducts("Main");
+
+	// print_r($products); die;
+?>
+
+<?php /*
+<div class="product-detail-disc">
+  <div class="container">
+    <?php foreach ($products as $key => $product) { ?>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="product-details-large" id="ProductPhoto">
+          <img id="ProductPhotoImg" class="product-zoom" data-image-id="<?php echo $product['image']['id']; ?>" alt="<?php echo $product['image']['alt']; ?>" data-zoom-image="<?php echo $product['image']['src']; ?>" src="<?php echo $product['image']['src']; ?>">
+
+        </div>
+        <div class="thumnails-center">
+          <div id="ProductThumbs" class="product-thumbnail owl-carousel">
+            <a class="product-single__thumbnail active" href="#" data-image="<?php echo $product['image']['src']; ?>" data-image-id="<?php echo $product['image']['id']; ?>">
+              <img src="<?php echo $product['image']['src']; ?>" alt="<?php echo $product['image']['alt']; ?>">
+            </a>
+
+            <?php foreach ($product['images'] as $image_obj) { ?>
+            <a class="product-single__thumbnail " href="#"
+            data-image="<?php echo $image_obj['src']; ?>" data-zoom-image="<?php echo $image_obj['src']; ?>" data-image-id="<?php echo $image_obj['id']; ?>">
+            <img src="<?php echo $image_obj['src']; ?>" alt="<?php echo $image_obj['alt']; ?>"></a>
+            <?php } ?>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="product-disc-part">
+              <h3><?php echo $product['title']; ?></h3>
+
+              <div class="discounted-price">
+
+                <span>$ <?php echo $product['variants'][0]['compare_at_price']; ?></span> $ <?php echo $product['variants'][0]['price']; ?>
+              </div>
+              <a class="order-now-btn" href="./product.php?product_id=<?php echo $product['id']; ?>">Order Now!</a>
+          </div>
+          <div class="about-product">
+            <?php echo $product['body_html']; ?>
+          </div>
+      </div>
+    </div>
+    <?php } ?>
+  </div>
+</div>
+
+*/ ?>
+
+<style type="text/css">
+    #email_error_msg
+    {
+        margin-top: -10px;color: #ff0000;
+    }
+        #loading-indicator {
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 0;
+            box-sizing: border-box;
+            height: 100%;
+            left: 0;
+            margin: 0 auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            padding: 0px !important;
+            margin: 0px !important;
+            font-size: 1px;
+            z-index: 9999 !important;
+        }
+
+        #loading-indicator:before {
+            background: url("assets/loading.gif") no-repeat center center;
+            box-sizing: border-box;
+            content: "";
+            height: 70px;
+            left: 50%;
+            margin-left: -35px;
+            margin-top: -70px;
+            position: absolute;
+            top: 50%;
+            width: 70px;
+            z-index: 2;
+        }
+
+        #loading-indicator:after {
+            background: #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #000;
+            content: "Processing, one moment please... ";
+            font-family: arial;
+            font-size: 17px;
+            height: 110px;
+            left: 50%;
+            line-height: 98px;
+            margin-left: -150px;
+            margin-top: -75px;
+            padding-top: 35px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 300px;
+            z-index: 1;
+        }
+        /*style="font-size: 2rem;font-weight: bold;text-transform: uppercase; color:black;"*/
+</style>
+
+    <p id="loading-indicator" style="display:none;">Processing...</p>
+
+
+    <?php if(isset($_REQUEST['error'])){ ?>
+    <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
+        <!-- <strong>Payment Failed!</strong> Payment is cancelled from the paypal. -->
+        <?php echo($_REQUEST['error']); ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <?php } ?>
+
+  <section class="row justify-content-center banner-section" style="background-image: url('https://cdn.shopify.com/s/files/1/0263/9111/7929/files/banner.jpg?v=1569323146');">
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col text-center section_heading">
+                        <h4 >This is one of the best ways to show your support for President Trump and his re-election in 2020!</h4>
+                        <h4 class="txt_secondary"  >Introducing.... the <?php echo $products[0]['title']; ?>!</h4>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around banner">
+                   <!-- <div class="col-sm-4 text-center ">
+                        <img src="assets/images/currency.png" class="banner_currency img-fluid">
+                    </div>
+                    <div class="col-sm-4 text-center ">
+                        <img src="assets/images/demoProduct.png" class="banner_currency img-fluid">
+                    </div>-->
+					<div class="col-sm-8 text-center ">
+                        <img src="assets/images/miximg.png" class="banner_currency img-fluid">
+                    </div>
+It Looks So Real Your Liberal Relative Will Freak Out When You Show Them
+                        <div class="col-md-9 small_Card claim-trump">
+                            <div class="row justify-content-center">
+                                    <h4 class="text-center"  style="font-size: 2rem;font-weight: bold;color:black;">
+                                        Claim Your <?php echo $products[0]['title']; ?> Today!
+                                    </h4>
+                            </div>
+                            <div class="row justify-content-center">
+                                    <a class="big_btn btn modal_Open_action">Check Availability Now</a>
+                            </div>
+                            <div class="row justify-content-center">
+
+
+                                <!--<h5 class="txt_primary thinTxt" style="font-weight: bold;">-->
+                                <!--    <b> NO MEMBERSHIPS. NO TRIALS. NO SIGN-UPS. NO B.S.</b>-->
+                                <!--</h5>-->
+
+                                <h4 class="txt_gray text-center">
+																	Claim your Trump Train 2020 Pin Today for just $9.95 and FREE SHIPPING!
+
+                                </h4>
+                            </div>
+                            <!--<div class="clearfix text-center">-->
+
+                            <!--        <p>-->
+                                        <!--To make things super easy & simple for you, we're covering the product fee and requesting small help with S&H.-->
+                                        <!--So when you order today, you'll only pay for First Class USPS shipping & handling.-->
+                            <!--            Claim your FREE Trump Train 2020 Pin Today! All we ask if that you cover the Shipping & Handling and we’ll take care of the rest! -->
+                            <!--        </p>                                        -->
+                            <!--</div>                                -->
+                        </div>
+
+                </div>
+            </div>
+        </section>
+		<!---
+		<section class="row justify-content-center claim_your_trump grayBG">
+			<div class="col-sm-9 small_Card">
+				<div class="row justify-content-center">
+						<h4 class="text-center" >
+							CLAIM YOUR <?php echo $products[0]['title']; ?>
+						</h4>
+				</div>
+				<div class="row justify-content-center">
+						<a class="big_btn btn modal_Open">Check Availability Now</a>
+				</div>
+				<div class="row justify-content-center">
+						<h5 class="txt_primary thinTxt">
+							IF THE BUTTON BELOW DOES NOT CLICK THEN THEY ARE SOLD OUT
+						</h5>
+				</div>
+				<div class="clearfix text-center">
+						<h4 class="txt_gray">
+							NO MEMBERSHIPS. NO TRIALS. NO SIGN-UPS. NO B.S.
+						</h4>
+						<p>
+							To make things super easy & simple for you, we're covering the product fee and requesting small help with S&H.
+							So when you order today, you'll only pay for First Class USPS shipping & handling.
+						</p>
+				</div>
+			</div>
+        </section>
+        --->
+
+        <section class="row justify-content-center we_are_doing">
+            <div class="col-md-10"><h2 class="BigTxt">Who We Are</h2></div>
+            <div class="col-md-10">
+                <p>Are you ready to re-elect the greatest president in American history for a 2nd term? At StillMyPresident.com our goal is to provide you with the most unique Trump gear that the world has ever seen! Our team of Patriots personally design all our T-Shirts, hats, jewelry, & apparel right here in the USA! We pride ourselves  in providing top notch customer service to bring our unique Trump gear to you in a timely and affordable manner.
+                </p>
+			</div>
+        </section>
+
+
+        <section class="row justify-content-center graydark free_trump_train">
+            <div class="col">
+                    <p class="thinTxt margin_B">
+                    <!--Take A Sneak Peek... -->
+                    <!--While Supplies Last! Get your Limited Edition Trump Train 2020 Pin for FREE! (Just cover S&H)-->
+Available While Supplies Last! Get Your Limited Edition Trump Train 2020 Pin For $9.95 + FREE SHIPPING!                    </p>
+                    <h2 class="BigTxt margin_B">Free Trump Train 2020 Pin</h2>
+                    <div class="row justify-content-center ">
+                         <div class="col-md-3 col-sm-4 text-center ">
+                        <img src="assets/images/currency.png" class="banner_currency img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-4 text-center ">
+                        <img src="assets/images/demoProduct.png" class="banner_currency img-fluid hide-mobile">
+                    </div>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <a class="big_btn btn col-11 col-md-7 modal_Open_action">
+                            <!--Yes! Please send me Free Trump Train 2020 Pin-->
+														Yes I want a Trump Train 2020 Pin!
+
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+
+        <section class="row justify-content-center">
+
+            <div class="col">
+                    <div class="row justify-content-center ">
+                        <h2 class="BigTxt thikTxt margin_B">
+                                <!--DON'T JUST TAKE OUR WORD FOR IT...-->
+                                Checkout our Reviews from Patriots just like you!
+                        </h2>
+                    </div>
+                    <!--<div class="row justify-content-center ">-->
+                    <!--    <h4 class="BigTxt thinTxt margin_B">-->
+                    <!--            See What Others Have Said About Their Experience!-->
+                    <!--    </h4>-->
+                    <!--</div>-->
+
+                    <div class="row justify-content-center margin_B">
+                        <div class="col-sm-3">
+                            <img src="assets/images/trumppin.jpg" class="img-fluid margin_B"/>
+                        </div>
+                        <div class="col-sm-5 singleFlexBox">
+                            <q>Every time I wear this pin out I get a lot of compliments. Glad to see so much support for the greatest president this country has ever seen.
+                            </q>
+
+                            <span class="btn_Link thikTxt">- Doug F. Austin, TX</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center margin_B">
+                        <div class="col-sm-3">
+                            <img src="assets/images/tpin.jpg" class="img-fluid margin_B"/>
+                        </div>
+                        <div class="col-sm-5 singleFlexBox">
+                            <q>
+                                I wear this pin every day in honor of my great grandfather who served. The quality is very good.
+                            </q>
+
+                            <span class="btn_Link thikTxt">- Gene B. Sacramento, CA.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center margin_B">
+                        <div class="col-sm-3">
+                            <img src="assets/images/tpin1.jpg" class="img-fluid margin_B"/>
+                        </div>
+                        <div class="col-sm-5 singleFlexBox">
+                            <q>
+I got my Trump hat and pin in the mail yesterday, and loved it! Thank you guys, TRUMP 2020!
+                            </q>
+
+                            <span class="btn_Link thikTxt">- Becky M. Mobile, AL.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center margin_B">
+
+                            <a class="big_btn btn  col-11 col-md-7 modal_Open_action">
+                                <!--Yes! Please send me Free Trump Train 2020 Pin-->
+																Yes I want a Trump Train 2020 Pin!
+
+                            </a>
+                    </div>
+            </div>
+        </section>
+
+
+        <section class="row justify-content-center graydark remember_trump">
+            <div class="col-sm-9">
+
+                    <h2 class="BigTxt margin_B">
+                        To provide a truly great buying experience, we believe that you must have two things
+that cannot be bought with money: Honesty & Integrity.
+                    </h2>
+
+                    <h2 class="text-center margin_B">
+                            Whether you are shopping for gifts for friends & family or shopping for yourself, you can
+rest assured that your buying experience will be 100% secure and the experienced team
+at StillMyPresident.com will process your order quickly and efficiently.
+                    </h2>
+
+                    <div class="row justify-content-center margin_B" >
+                        <a class="big_btn btn col-11 col-md-7 arrowBtn modal_Open_action">
+                            <!--Yes! Please send me Free Trump Train 2020 Pin-->
+														Yes I want a Trump Train 2020 Pin!
+
+                        </a>
+                    </div>
+            </div>
+
+                <!--<div style="    width: 100%;background: #fff;color: #000;padding-left: 15%;padding-right: 15%;">-->
+
+                <!--</div>-->
+
+
+        </section>
+
+
+
+
+    <div class="modal_container ">
+        <div class="modal_Inner">
+            <div class="modal_Head">
+                <a class="modalClose"><i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                <h5>Enter Your Email Below Get Your FREE Trump Train 2020 Pin</h5>
+            </div>
+
+            <div class="modal_Body">
+                <div class="col">
+                    <form id="form1" action="core/core.php" method="POST" onsubmit="">
+                      <input type="hidden" name="action" value="go_shipping">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control margin_B" placeholder="Email Address" onkeypress="removeError();">
+                            <div style="display: none;" id="email_error_msg">Enter valid email address.</div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <!-- Form.html -->
+                            <button type="submit" class="big_btn btn btn-green">
+                                START YOUR FREE ORDER
+                                <h6>
+                                    Offer is only available if the promotion is still active
+                                </h6>
+                            </button>
+                        </div>
+                    </form>
+                    <span>Privacy Policy: We need your email address to send you free gear deals.</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.js" ></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js" ></script> -->
+
+    <script>
+        $(document).ready(function(){
+
+            $('.modal_Open_action').on('click',function(){
+                $('#form1').submit();
+            });
+
+            $('.modal_Open').on('click', function(){
+                // alert('i am on');
+                $('.modal_container').addClass('opened');
+
+                $('.mainBody').css('overflow', 'hidden');
+
+                // var modal_Inner_height = $('.modal_Inner').height()
+                // var head_height = $('.modal_Head').height();
+                // var modal_Body = modal_Inner_height - (head_height + 30);
+
+                // $('.modal_Body').css('height', modal_Body);
+
+                // $('.modal_container').click(function(event){
+                //     event.stopPropagation()
+                //     alert(1);
+                // });
+
+
+                $('.modal_container').on('click', function(e) {
+                if (e.target !== this)
+                    return;
+
+                // alert( 'clicked the foobar' );
+
+                    $(this).removeClass('opened');
+                    $('.mainBody').css({
+                        'overflow-x' : 'hidden',
+                        'overflow-y' : 'auto'
+                    });
+
+                });
+
+                $('.modalClose').click(function(){
+                    $(this).parents('.modal_container').removeClass('opened');
+                    $('.mainBody').css({
+                        'overflow-x' : 'hidden',
+                        'overflow-y' : 'auto'
+                    });
+
+                });
+
+                // $('.modal_container .btn').click(function(){
+                //     $(this).parents('.modal_container').removeClass('opened');
+                //     alert('submitted 1')
+                // });
+
+                // $('#form1').submit(function( e ) {
+                //    e.preventDefault();
+                //     var fdata=$('form').serialize();
+
+                //     alert(fdata);
+                // });
+
+                // alert(modal_Inner_height);
+                // alert(head_height);
+
+                // alert(modal_Body);
+            });
+        });
+
+        $(window).on('resize', function(){ } );
+
+
+
+    //
+
+
+        // $('form').submit(function( e ) {
+        // email       = $('input[name="email"]').val();
+        // var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        //     if(email == '' || !(regex.test(email))) {
+        //         $('#email').css('border-color', '#ff0000');
+        //         $("#email_error_msg").show();
+        //         return false;
+        //     }
+        //     $("#loading-indicator").show();
+        // });
+
+        function removeError()
+        {
+            $('#email').css('border-color', '#d3d3d3');
+            $("#email_error_msg").hide();
+        }
+
+    </script>

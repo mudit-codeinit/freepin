@@ -1,0 +1,706 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: #ff9251;
+    text-decoration: none;
+}
+
+.payForm h6{
+    color: #b3b1b1;
+    /* font-weight: 400; */
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.radioBox, .checkbox {
+    display: inline-block;
+    /* width: 31%; */
+    margin-right: 10px;
+}
+.radioBox input, .checkbox input{
+    display: none;
+}
+
+.radioBox label, .checkbox label{
+    display: block;
+    height: 20px;
+    margin-bottom: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.radioBox label:before{
+    content: '';
+    /* display: inline-block; */
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #fd9355;
+    transition: .3s;
+    /* vertical-align: middle; */
+    float: left;
+    margin-right: 10px;
+}
+
+.checkbox label:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(224, 222, 222, 0.8);
+    border: solid 1px #fd9355;
+    transition: .3s;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.checkbox input:checked + label:before{
+    background-color: #ff9251;
+    transition: .3s;
+}
+
+.radioBox input:checked + label:before{
+    background-color: #ff9251;
+    transition: .3s;
+
+}
+
+.radioBox input:checked + label:after{
+    content:'';
+    background-color: #fcfaf9;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.checkbox input:checked + label:after{
+    content: '';
+    /* background-color: #fcfaf9; */
+    width: 15px;
+    height: 7px;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    border-left: solid 2px #ffffff;
+    border-bottom: solid 2px #ffffff;
+    transform: rotate3d(0, 0, 1, -50deg);
+}
+
+.payOption img {
+    /* width: calc(100% - 30px);
+    max-width: 25px; */
+    height: 18px;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    float: left;
+    margin-top: 1px;
+}
+
+.faIcon .fa{
+    margin-left: 15px;
+    color: #dedfdf;
+}
+
+.itemDel.faIcon .fa{
+    font-size: 12px;
+}
+
+.itemPrice.faIcon .fa{
+    margin-left: 5px;
+    color: #3f3f3f;
+    font-size: 12px;
+}
+
+.itemPrice{
+    min-width: 90px;
+    text-align: right;
+}
+
+.pageContainer{
+    background-color: #f6f6f6;
+}
+
+.sectionCard{
+    background-color: #fff;
+    height: 85%;
+    /* max-height: 85%; */
+    padding-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #f3f3f3;
+    overflow-y: auto;
+}
+
+.full_height{
+    height: 100%;
+}
+
+.stapes {
+    padding: 15px;
+    height: 60px;
+}
+
+.stap {
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.stapeContainer {
+    height: calc(100% - 70px);
+    position: relative;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 0px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    padding-left: 0px;
+    display: flex;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    /* width: 33.33%; */
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    /* background: #ccc; */
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+#progressbar li:first-child:before{
+    margin-left: 15px;
+}
+
+#progressbar li:last-child:before{
+    margin-right: 15px;
+}
+
+#progressbar li.done{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#progressbar li.done:before{
+    border-color: #ff9251;
+    content: "\f00c";
+    line-height: 28px;
+}
+
+#progressbar li.done + li:before {    
+    color: #ff9251;    
+    border: solid 1px #ff9251;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: calc(100% - 30px);
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: calc(-50% + 15px);
+    top: 15px;
+    z-index: 1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child + li:after{
+    width: calc(150% - 60px);
+    left: calc(-100% + 45px);
+}
+
+#progressbar li:last-child:after{
+    width: calc(150% - 60px);
+    right: calc(-100% + 30px);
+}
+
+#progressbar li.done + li:after {
+    background: #ff9251;
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking done/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.done:before, #progressbar li.done:after {
+    background: #ff9251;
+    color: white !important;
+}
+
+/* shoppingBag */
+
+.shoppingBag {
+    padding-left: 45px;
+    padding-right: 15px;
+    padding-top: 55px;
+    width: 60%;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.shoppingBag_Item {
+    padding: 0px 15px;
+    border-bottom: solid 1px #f9f9f9;
+}
+
+.shoppingBag_header {
+    padding: 15px;
+    position: absolute;
+    width: calc(100% - 30px);
+    background-color: #fff;
+    top: 0;
+
+    /* box-shadow: 8px 0px 7px 0px #eae8e8; */
+}
+
+.shoppingBag_DelAll {
+    font-size: 12px;
+    color: #dedfdf;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.shoppingBag_DelAll:hover .fa{
+    color: #f00;
+}
+
+.shoppingBag_Items {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.itemImg_box {
+    /* padding: 5px 15px; */
+    /* height: 100px;
+    width: 120px; */
+}
+
+.itemImg {
+    /* padding: 5px 15px; */
+    height: 135px;
+    width: 145px;
+    object-fit: contain;
+}
+
+.itemCont {
+    min-height: 80px;
+}
+
+.itemCont span {
+    color: #a3a1a1;
+}
+
+.itemCount input[type="text"] {
+    width: 40px;
+    text-align: center;
+    border: none;
+}
+
+.itemCount > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.itemCount a {
+    font-size: 10px;
+    /* margin-top: -5px; */
+    color: #dedfdf;
+}
+
+.itemCount a:last-child{
+    /* font-size: 25px; */
+    /* margin-top: 0; */
+}
+
+.itemCount a:hover {
+    color: #ff9251;
+}
+
+.itemDel:hover .fa{
+    color: #f00;
+}
+
+  /* payForm */
+
+  .formBox{
+      height: 100%;
+      width: 40%;
+      position: relative;
+      padding-left: 15px;
+      padding-top: 53px;
+      padding-right: 45px;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .payForm_Header {
+    padding: 15px;
+    padding-left: 25px;
+    position: absolute;
+    width: calc(100% - 45px);
+    background-color: #f9f9f9;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    /* box-shadow: 8px 0px 7px 0px #eae8e8; */
+}
+
+  .payForm {
+    /* height: calc(100% - 0px); */
+    margin-left: -15px;
+    padding: 25px;
+    padding-top: 0;
+    border-radius: 4px;
+    /* overflow-y: auto; */
+    background-color: #f9f9f9;
+}
+
+.payForm form {
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+    margin-right: -15px;
+    padding-right: 15px;
+}
+
+.payForm .form-group {
+    /* margin-bottom: 11px; */
+}
+
+.total_Amount{
+    display: inline-block;
+}
+
+.total_Amount + .fa{
+margin-left: 10px;
+}
+
+.PaySubpit_Box{
+    position: relative;
+    height: 40px;
+}
+
+.PaySubpit {
+    position: absolute;
+    bottom: 45px;
+    right: -50px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ff9251;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    border: solid 1px #ff9251;
+    transition: .3s;
+}
+
+.PaySubpit:hover{
+    background-color: #fff;
+}
+
+.payOption label {
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 991px){
+
+    .itemImg {
+        height: 90px;
+        width: 90px;
+    }
+
+    .itemCont {
+        min-width: 205px;
+    }
+
+    .shoppingBag_Item{
+        margin-bottom: 10px;
+        box-shadow: 0px 3px 6px #ebebeb;
+    }
+
+    .expires_Date{
+        margin-bottom: 1rem;
+    }
+
+    .radioBox.payOption {
+        margin-bottom: 15px;
+    }
+
+    .payOption img {
+        height: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .sectionCard{
+        height: 100%;;
+    }
+
+    .stapeContainer{
+        overflow-y: auto;
+    }
+
+    .shoppingBag_header{
+        width: calc(100% - 1px);
+    }
+
+    .shoppingBag{
+        height: auto;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .shoppingBag_DelAll{
+        margin-right: 0;
+    }
+
+    .itemImg {
+        height: 90px;
+        width: 90px;
+    }
+
+    .shoppingBag_Items{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+    }
+
+    .shoppingBag_Item{
+        margin-bottom: 10px;
+        box-shadow: 0px 3px 6px #ebebeb;
+    }
+
+    .itemCont {
+        min-width: 220px;
+    }
+
+    .formBox {
+        padding-right: 15px;
+        position: unset;
+        width: 100%;
+    }
+
+    .payForm{
+        margin-right: -15px;
+        padding-top: 25px;
+        height: auto;
+    }
+
+    .payForm_Header{
+        width: calc(100% - 1px);
+    }
+
+    .PaySubpit{
+        right: 0;
+    }
+
+}
+
+
+
+@media only screen and (max-height: 680px){
+
+    .payForm form{
+        max-height: calc(100% - 15px);
+    
+    }
+
+    .PaySubpit_Box{
+        height: 5px;
+    }
+
+    .PaySubpit{
+        bottom: -15px;
+    }
+
+}
+
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff9251;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 146, 81, 0.33);
+    caret-color: #ff9251;
+}
+
+.datepicker {
+    width: 100%;
+    max-width: 220px;
+    border: solid 2px #ff9251;
+}
+
+th.dow {
+    color: #fa5e03;
+}
+
+.datepicker td.active:hover, .datepicker td.active:hover:hover, .datepicker td.active:focus, .datepicker td.active:hover:focus, .datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active:hover.active, .datepicker td.active.disabled, .datepicker td.active:hover.disabled, .datepicker td.active[disabled], .datepicker td.active:hover[disabled] {
+    color: #ffffff;
+    background-color: #fa5e03;
+    *background-color: #fa5e03;
+}
+
+.datepicker td.active, .datepicker td.active:hover {
+    color: #ffffff;
+    background-color: #fa5e03;
+    background-image: unset;
+    background-image: unset;
+    background-image: unset;
+    background-image: unset;
+    background-image: unset;
+    background-repeat: unset;
+    filter: unset;
+    border-color: unset;
+    border-color: unset;
+    background-color: unset;
+    filter: unset;
+    color: unset;
+    text-shadow: unset;
+}
+
+.table-condensed thead tr:first-child{
+    background-color: #ff9251;
+}
+
+th.prev, th.switch, th.next {
+    color: #fff;
+}
+
+.datepicker thead tr:first-child th:hover {
+    background: #fa5e03;
+}
+
+.datepicker thead tr:first-child th:hover {
+    background: #fa5e03;
+}
+
+.datepicker thead tr:first-child th:hover {
+    background: #fa5e03;
+}
+
+.datepicker:before {
+    content: '';
+    display: inline-block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ff9251;
+    border-bottom-color: rgb(255, 146, 81);
+    position: absolute;
+    top: -10px;
+    left: 4px;
+}
+
+.datepicker:after {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ffffff;
+    position: absolute;
+    top: -6px;
+    left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, .03); /* or add it to the track */
+    border-radius: 4px;
+    -webkit-transition-property: width;
+    cursor: pointer;
+  }
+
+
+   
+.shoppingBag_Items::-webkit-scrollbar, .payForm form::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0); /* or add it to the track */
+  }
+  
+  
+.shoppingBag_Items:hover::-webkit-scrollbar, .payForm form:hover::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, .1); /* or add it to the track */
+  }
+  
+  /* Add a thumb */
+  ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, .3); 
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(252, 152, 2) !important;
+  }
+
+
+
+
+
+
+
